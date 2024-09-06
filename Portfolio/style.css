@@ -1,0 +1,37 @@
+
+h1{
+  color:#be3144;
+}
+p{
+  width:50%;
+  font-size: large;
+  line-height: 2em;
+}
+
+.profiles{
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .buttons{
+  margin-top: 2em;
+} */
+.buttons button{
+  margin:2em 0.5em;
+}
+.buttons button:hover{
+    background-color: purple;
+    color:#fff;
+    font-weight: bold;
+}
+
+img{
+  height: 35vh;
+  border-radius: 50%;
+  border: px solid #fff;
+}
+#home{
+  display: flex;
+  gap:10em;
+}

@@ -1,15 +1,15 @@
 let button = document.getElementById('projects')
 let display = false; 
-
 function displayInfo(element){
+   var para = element.previousElementSibling;
   if(!display){
-  element.nextElementSibling.style.cssText = 'display:block; background-color:#dadfd0;'
+    console.log(para)
+  para.style.cssText = 'display:block;'
   element.innerText = 'Hide';
-    element.style.cssText = 'background-color:lightgreen;color:black;'
     display = true;
   }
   else{
-     element.nextElementSibling.style.cssText = 'visibility:hidden; background-color:#dadfd0;'
+    para.style.cssText='display:none;'
       element.innerText = 'Know more..';
       element.style.cssText = 'background-color:lightblue;color:black;'
      display = false;
@@ -17,7 +17,9 @@ function displayInfo(element){
 }
 
 button.addEventListener('click',(event) => {
+  if(event.target.tagName == 'BUTTON'){
   displayInfo(event.target)
+  }
 })
 
 

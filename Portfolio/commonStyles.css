@@ -1,13 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body{
-  background-color: #f2f2f2;
+      background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
   color: #0a121b;
   font-family: "Poppins", system-ui;
+  font-weight: 500;
+  min-height: 100vh;
+}
+.profiles *{
+  margin-left: 0.3em;
+  
+}
+button a{
+  text-decoration: none;
+  color: #f2f2f2;
+}
+header h1{
+  font-family: "Dancing Script", cursive;
+    /* font-style: normal; */
+    font-size:7vh;
+    font-weight: bold;
+    color: darkred;
+    text-align: center;
 }
 .navbar-nav{
   display: flex;
@@ -33,10 +53,39 @@ ul{
 }
 
 main {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   gap: 1em;
-  margin: 0 5em;
+  margin: 0.8em;
   justify-content: center;
+}
+footer{
+  background-color: #222831;
+  color: #f2f2f2;
+font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0.2em;
+}
+footer p{
+  width:60%;
+}
+footer h3, footer p{
+  margin-left: 1em;
+}
+footer .profiles{
+  margin-bottom: 1em;
+}
+footer h3{
+  font-family: "Dancing Script", cursive;
+    font-size: 5vh;
+}
+
+footer .material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }
